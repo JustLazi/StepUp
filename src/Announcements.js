@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container';
 import Fade from 'react-reveal/Fade';
+import Moment from 'react-moment';
 
 function Announcements() {
 
@@ -34,7 +35,7 @@ function Announcements() {
         return (
             <div id="container">
                 <h1 className="center bold" id="gradienttext">Announcements</h1>
-
+                <div className='blank'></div>
                 <div id="divmesomespacesmall" />
                 {!announcements ? (
                     'Loading'
@@ -47,7 +48,7 @@ function Announcements() {
                                 <Fade bottom cascade>
                                 <Col key={announcement.writer}>
                                 <Card style={{"height" : '120%', width: '75vw'}} id="faqcard">
-                                  <Card.Body>
+                                  
                                     <Card.Title>
                                         <a>{announcement.writer}</a>
                                     </Card.Title>
@@ -55,9 +56,10 @@ function Announcements() {
                                   {announcement.description}
                                   </Card.Text>
                                   <Card.Text>
-                                    {announcement.date}
+                                  <Moment format="MMM DD, YYYY">{announcement.date}</Moment>
+
                                   </Card.Text>
-                                  </Card.Body>
+                                  
                                   
                                 </Card>
                                 <div id="divmesomespacesmall"></div>
