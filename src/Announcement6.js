@@ -7,9 +7,9 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container';
 import Fade from 'react-reveal/Fade';
 import Moment from 'react-moment';
-import Nav from 'react-bootstrap/Nav';
+import Nav from 'react-bootstrap/Nav'
 
-const Announcements = () => {
+const Announcement6 = () => {
 
     const [announcements, setAnnouncements] = useState(null);
 
@@ -17,7 +17,7 @@ const Announcements = () => {
         const fetchAnnouncements = async() => {
             const { announcements } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             `{
-                announcements(orderBy: date_DESC where: {grade_in: [10]}) {
+                announcements(orderBy: date_DESC where: {grade_in: [6,10]}) {
                   writer
                   date
                   description
@@ -39,22 +39,22 @@ const Announcements = () => {
                 <div className='blank'></div>
                 <Nav variant="pills" className="justify-content-center" activeKey="1">
                 <Nav.Item>
-                    <Nav.Link eventKey="General" href="/Announcements" id='activelink'>
+                    <Nav.Link eventKey="General" href="/Announcements" >
                             General Announcement
                      </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="4thgrade" title="4thgrade" href="/Announcement4">
+                    <Nav.Link eventKey="4thgrade" title="4thgrade" href="/Announcement4" >
                       4th grade announcements
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="5thgrade" title="5thgrade" href="/Announcement5">
+                    <Nav.Link eventKey="5thgrade" title="5thgrade" href="/Announcement5" >
                       5th grade announcements
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="6thgrade" title="6thgrade" href="/Announcement6">
+                    <Nav.Link eventKey="6thgrade" title="6thgrade" href="/Announcement6" id='activelink'>
                       6th grade announcements
                     </Nav.Link>
                 </Nav.Item>
@@ -111,4 +111,4 @@ const Announcements = () => {
         );
     };
 
-export default Announcements;
+export default Announcement6;

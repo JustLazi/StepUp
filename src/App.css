@@ -432,6 +432,17 @@ body.dark {
 
 
 /* Announcement CSS */
+
+#linkscentered{
+  display:flex;
+  place-items:center;
+  justify-content: center;
+}
+
+#activelink{
+  font-weight: bold;
+}
+
 #divmesomespacesmall {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -459,6 +470,9 @@ body.dark {
 }
 }
 
+.clickedhyperlink {
+  font-weight: bold;
+}
 
 /* POST PAGE CSS */
 

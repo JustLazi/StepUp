@@ -13,7 +13,11 @@ import Getintouch from './Getintouch';
 import DarkMode from './DarkMode';
 import Post from './Post';
 import ScrollToTop from './ScrollToTop';
-
+import Announcement4 from './Announcement4';
+import Announcement5 from './Announcement5';
+import Announcement6 from './Announcement6';
+import Announcement7 from './Announcement7';
+import Announcement8 from './Announcement8';
 
 export default class Navb extends Component {
     
@@ -49,7 +53,13 @@ export default class Navb extends Component {
         <Route path="/Announcements" exact component={Announcements} />
         <Route path="/getintouch" exact component={Getintouch} /> 
         <Route path="/Calendar" exact component={Calendar} />
-        <Route path="/Points" exact component={Points} /> 
+        <Route path="/Points" exact component={Points} />
+        <Route path="/Announcement4" exact component={Announcement4} /> 
+        <Route path="/Announcement5" exact component={Announcement5} /> 
+        <Route path="/Announcement6" exact component={Announcement6} /> 
+        <Route path="/Announcement7" exact component={Announcement7} /> 
+        <Route path="/Announcement8" exact component={Announcement8} /> 
+
       </Switch>
       </div>
       </Router>
