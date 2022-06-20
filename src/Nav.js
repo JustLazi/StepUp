@@ -40,12 +40,12 @@ export default class Navb extends Component {
           <Navbar.Collapse className="basic-navbar-nav" id="nogrow">
             <Nav className="me-auto">
               <Nav.Link eventKey="1" as={Link} to={"/"} id="navlinkoverridetextcolor" className="underline2">Home</Nav.Link>
-              <Nav.Link eventKey="2" as={Link} to={"/about"} id="navlinkoverridetextcolor" className="underline2">About</Nav.Link>
+              {/* <Nav.Link eventKey="2" as={Link} to={"/about"} id="navlinkoverridetextcolor" className="underline2">About</Nav.Link> */}
               <Nav.Link eventKey="3" as={Link} to={"/Announcements"} id="navlinkoverridetextcolor" className="underline2">Announcements</Nav.Link>
               <Nav.Link eventKey="4" as={Link} to={"/Calendar"} id="navlinkoverridetextcolor" className="underline2">Calendar</Nav.Link>
               <Nav.Link eventKey="5" as={Link} to={"/Points"} id="navlinkoverridetextcolor" className="underline2">Points</Nav.Link>
               <Nav.Link eventKey="6" as={Link} to={"/Transport"} id="navlinkoverridetextcolor" className="underline2">Transport</Nav.Link>
-              <Nav.Link href="/getintouch"><Button id="button"><span id="bold">Get in touch</span></Button></Nav.Link>
+              {/* <Nav.Link href="/getintouch"><Button id="button"><span id="bold">Get in touch</span></Button></Nav.Link> */}
               <DarkMode />
             </Nav>
           </Navbar.Collapse>
