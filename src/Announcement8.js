@@ -59,12 +59,12 @@ const Announcement8 = () => {
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="7thgrade" title="7thgrade" href="/Announcement7" id='activelink'>
+                    <Nav.Link eventKey="7thgrade" title="7thgrade" href="/Announcement7">
                       7th grade announcements
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="8thgrade" title="8thgrade" href="/Announcement8">
+                    <Nav.Link eventKey="8thgrade" title="8thgrade" href="/Announcement8" id='activelink'>
                       8th and 9th grade announcements
                     </Nav.Link>
                 </Nav.Item>
