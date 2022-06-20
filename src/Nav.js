@@ -50,7 +50,7 @@ export default class Navb extends Component {
               <Nav.Link eventKey="4" as={Link} to={"/Calendar"} id="navlinkoverridetextcolor" className="underline2">Calendar</Nav.Link>
               <Nav.Link eventKey="5" as={Link} to={"/Points"} id="navlinkoverridetextcolor" className="underline2">Points</Nav.Link>
               <Nav.Link eventKey="6" as={Link} to={"/Transport"} id="navlinkoverridetextcolor" className="underline2">Transport</Nav.Link>
-              {/* <Nav.Link href="/getintouch"><Button id="button"><span id="bold">Get in touch</span></Button></Nav.Link> */}
+              <Nav.Link href="/getintouch"><Button id="button"><span id="bold">Get in touch</span></Button></Nav.Link>
               <DarkMode />
             </Nav>
           </Navbar.Collapse>
