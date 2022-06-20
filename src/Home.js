@@ -50,7 +50,7 @@ const Home = () => {
 
 <div id="centereddiv">
     <p className="center" class="buttondescrip">Our Calendar</p>
-    <Button id="bigbutton" href="/Caldendar">Calendar</Button>
+    <Button id="bigbutton" href="/Calendar">Calendar</Button>
 </div>
 
 <div className="blank"></div>
