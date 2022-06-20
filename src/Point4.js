@@ -93,7 +93,7 @@ function Point4() {
         {points.map((point, i) => (
     <Fade cascade>
     <Col key={point.sname}>
-    <Card style={{"height" : '120%', width: '20rem'}} id="aboutcard">
+    <Card style={{"height" : '120%', width: '20rem'}} id="pointcard">
 
       <Card.Body>
         <Card.Title>
