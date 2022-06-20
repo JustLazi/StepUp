@@ -560,3 +560,26 @@ body.dark {
   margin-inline: auto;
   text-align: center;
 }
+
+.centeredcard
+{
+  padding-top: 27vh;
+  text-align: center;
+  
+}
+
+#calendartilt {
+  /* position relative enables me to bottom align the 'last updated' text */
+  position: relative;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+  cursor: pointer;
+}
+
+#calendarfont{
+  font-weight: 700;
+  font-size: 2.5vw;
+  text-decoration: underline;
+  text-decoration-color: var(--background-color);
+}
