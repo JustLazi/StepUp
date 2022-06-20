@@ -591,3 +591,16 @@ body.dark {
   border-color: var(--text-color);
   cursor: pointer;
 }
+
+#calendarcard {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+  border-width: 2px;
+  position: relative;
+}
+
+#calendarcardtext {
+  font-size: 2em;
+  font-weight: bolder;
+}

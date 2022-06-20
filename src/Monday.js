@@ -46,7 +46,7 @@ function Mondays() {
                                 
                                 <Fade bottom cascade>
                                 <Col key={monday.time}>
-                                <Card id = 'calendarcardleft'>
+                                <Card id = 'calendarcard'>
                                   
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                         <a>{monday.time}</a>
@@ -56,7 +56,7 @@ function Mondays() {
 
                                 </Col>
                                 <Col>
-                                <Card id = 'calendarcardright'>
+                                <Card id = 'calendarcard'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{monday.class}</a>
                                   </Card.Title>
