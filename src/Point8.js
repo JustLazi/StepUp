@@ -10,7 +10,7 @@ import Zoom from 'react-reveal/Zoom';
 import Nav from 'react-bootstrap/Nav';
 
 
-function Points() {
+function Point8() {
 
     const [points, setPoints] = useState(null);
 
@@ -19,7 +19,7 @@ function Points() {
             const { points } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             
             `{
-                points (orderBy: spoint_DESC){
+                points (orderBy: spoint_DESC, where: {sgrade_gte: 8}){
                     sname
                     spoint
                     sgrade
@@ -54,32 +54,32 @@ function Points() {
                     <div id="divmesomespacesmall" />
                     <Nav variant="pills" className="justify-content-center" activeKey="1">
                 <Nav.Item>
-                    <Nav.Link eventKey="All" href="/Points" id='activelink'>
+                    <Nav.Link eventKey="All" href="/Points">
                             All Step Up
                      </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="4thgrade" title="4thgrade" href="/Point4">
+                    <Nav.Link eventKey="4thgrade" title="4thgrade" href="/Point4"  >
                       4th grade points
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="5thgrade" title="5thgrade" href="/Point5">
+                    <Nav.Link eventKey="5thgrade" title="5thgrade" href="/Point5" >
                       5th grade points
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="6thgrade" title="6thgrade" href="/Point6">
+                    <Nav.Link eventKey="6thgrade" title="6thgrade" href="/Point6" >
                       6th grade Points
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="7thgrade" title="7thgrade" href="/Point7">
+                    <Nav.Link eventKey="7thgrade" title="7thgrade" href="/Point7" >
                       7th grade Points
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="8thgrade" title="8thgrade" href="/Point8">
+                    <Nav.Link eventKey="8thgrade" title="8thgrade" href="/Point8" id='activelink'>
                       8th and 9th grade Points
                     </Nav.Link>
                 </Nav.Item>
@@ -123,4 +123,4 @@ function Points() {
         );
     };
 
-export default Points;
+export default Point8;

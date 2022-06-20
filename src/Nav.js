@@ -18,6 +18,12 @@ import Announcement5 from './Announcement5';
 import Announcement6 from './Announcement6';
 import Announcement7 from './Announcement7';
 import Announcement8 from './Announcement8';
+import Point4 from './Point4';
+import Point5 from './Point5';
+import Point6 from './Point6';
+import Point7 from './Point7';
+import Point8 from './Point8';
+
 
 export default class Navb extends Component {
     
@@ -59,6 +65,13 @@ export default class Navb extends Component {
         <Route path="/Announcement6" exact component={Announcement6} /> 
         <Route path="/Announcement7" exact component={Announcement7} /> 
         <Route path="/Announcement8" exact component={Announcement8} /> 
+        <Route path="/Point4" exact component={Point4} />
+        <Route path="/Point5" exact component={Point5} />
+        <Route path="/Point6" exact component={Point6} />
+        <Route path="/Point7" exact component={Point7} />
+        <Route path="/Point8" exact component={Point8} />
+
+
 
       </Switch>
       </div>
