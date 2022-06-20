@@ -9,7 +9,7 @@ const Calendar = () => {
     return (
         <div id="container">
         <Zoom top>
-        <h1 className="center bold" id="gradienttext">Calendar</h1>
+        <h1 className="center bold" id="gradienttext">Weekly Calendar</h1>
         </Zoom>
         <div id="divmesomespacesmall" />
         <Container fluid>
