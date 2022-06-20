@@ -583,3 +583,11 @@ body.dark {
   text-decoration: underline;
   text-decoration-color: var(--background-color);
 }
+
+#pointcard{
+  position: relative;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+  cursor: pointer;
+}

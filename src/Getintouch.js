@@ -8,7 +8,7 @@ export default class Getintouch extends Component {
         <div id="container">
         <h3 className="center bold" id="gradienttext">Contact me</h3>
         <div id="formposition">
-        <form action="https://getform.io/f/5c19a844-62ec-4b14-af05-3e0512e44117" method="POST" acceptCharset="UTF-8">
+        <form action="https://getform.io/f/335805e2-e613-48ff-b327-4564bc543f0e" method="POST" acceptCharset="UTF-8">
             
             <section id="divmesomespacesmall">
             <p className="center bold">Name</p>
@@ -20,14 +20,10 @@ export default class Getintouch extends Component {
             <input type="email" name="email" placeholder="email@example.com" required="required" id="input"></input>
             </section>
 
-            <section id="divmesomespacesmall">
-            <p className="center bold">Organization</p>
-            <input type="text" name="organization" placeholder="Harvard University" id="input"></input>
-            </section>
 
             <section id="divmesomespacesmall">
             <p className="center bold">Message</p>
-            <input type="text" name="message" placeholder="Expressing interest in ____" id="input"></input>
+            <input type="text" name="message" placeholder="I would like to know_____ / I could not find_____" id="input"></input>
             </section>
 
             <section id="divmesomespacesmall">
