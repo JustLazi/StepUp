@@ -26,6 +26,11 @@ import Point8 from './Point8';
 import transportroute1 from './transportroute1';
 import transportroute2 from './transportroute2';
 import transportroute3 from './transportroute3';
+import Mondays from './Monday';
+import Tuesdays from './Tuesday';
+import Wednesdays from './Wednesday';
+import Thursdays from './Thursday';
+import Fridays from './Friday';
 
 export default class Navb extends Component {
     
@@ -35,7 +40,7 @@ export default class Navb extends Component {
               
       <Navbar collapseOnSelect expand="lg" fixed="top" id="nav">
         <Container>
-          <Navbar.Brand><div id="logo">Your Name Here</div></Navbar.Brand>
+          <Navbar.Brand><div id="logo">Step Up</div></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" id="navbartoggle" />
           <Navbar.Collapse className="basic-navbar-nav" id="nogrow">
             <Nav className="me-auto">
@@ -75,7 +80,11 @@ export default class Navb extends Component {
         <Route path="/transportroute1" exact component={transportroute1} />
         <Route path="/transportroute2" exact component={transportroute2} />
         <Route path="/transportroute3" exact component={transportroute3} />
-
+        <Route path="/Monday" exact component={Mondays} />
+        <Route path="/Tuesday" exact component={Tuesdays} />
+        <Route path="/Wednesday" exact component={Wednesdays} />
+        <Route path="/Thursday" exact component={Thursdays} />
+        <Route path="/Friday" exact component={Fridays} />
 
 
       </Switch>
