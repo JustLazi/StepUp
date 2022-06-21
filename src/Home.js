@@ -44,13 +44,16 @@ const Home = () => {
 
 <div id="announcementdiv">
     <p className="center" class="buttondescrip">Check out the latest Announcements</p>
+    <img src='announcement.jpg' id='announcementimg'></img>
     <Button id="bigbutton" href="/Announcements">Announcements</Button>
+    
 </div>
 
 <div className="blank"></div>
 
 <div id="centereddiv">
     <p className="center" class="buttondescrip">Our Calendar</p>
+    <img src='calendar.jpg' id='calendarimg'></img>
     <Button id="bigbutton" href="/Calendar">Calendar</Button>
 </div>
 
@@ -58,6 +61,7 @@ const Home = () => {
 
 <div id="pointsdiv">
     <p className="center" class="buttondescrip">Want to know how many points you have?</p>
+    <img src='points.jpg' id='pointimg'></img>
     <Button id="bigbutton" href="/Points">Points</Button>
 </div>
 </Fade>

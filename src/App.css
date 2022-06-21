@@ -228,6 +228,24 @@ body.dark {
 
 /* HOME PAGE CSS */
 
+#announcementimg{
+  padding-top:1vw;
+  width:30%;
+  padding-bottom:1vw;
+}
+
+#pointimg{
+  padding-top:1vw;
+  width:30%;
+}
+
+#calendarimg {
+  padding-top:1vw;
+  width:30%;
+  padding-bottom:1vw;
+
+}
+
 #blogtitlefont {
   font-weight: 700;
   text-decoration: underline;
