@@ -49,7 +49,7 @@ function Schedule5s() {
                                 <Col key={schedule5.time}>
                                 <Card id = 'calendarcardleft'>
                                   
-                                    <Card.Title id = 'calendarcardtexttime' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                         <a>{schedule5.time}</a>
                                     </Card.Title>
                                     
