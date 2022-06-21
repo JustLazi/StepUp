@@ -23,11 +23,12 @@ import Point5 from './Point5';
 import Point6 from './Point6';
 import Point7 from './Point7';
 import Point8 from './Point8';
-import Mondays from './Monday';
-import Tuesdays from './Tuesday';
-import Wednesdays from './Wednesday';
-import Thursdays from './Thursday';
-import Fridays from './Friday';
+
+import Schedule4s from './Schedule4';
+import Schedule7s from './Schedule7';
+import Schedule5s from './Schedule5';
+import Schedule6s from './Schedule6';
+import Schedule89s from './Schedule89';
 
 export default class Navb extends Component {
     
@@ -74,11 +75,12 @@ export default class Navb extends Component {
         <Route path="/Point6" exact component={Point6} />
         <Route path="/Point7" exact component={Point7} />
         <Route path="/Point8" exact component={Point8} />
-        <Route path="/Monday" exact component={Mondays} />
-        <Route path="/Tuesday" exact component={Tuesdays} />
-        <Route path="/Wednesday" exact component={Wednesdays} />
-        <Route path="/Thursday" exact component={Thursdays} />
-        <Route path="/Friday" exact component={Fridays} />
+
+        <Route path="/Schedule4" exact component={Schedule4s} />
+        <Route path="/Schedule5" exact component={Schedule5s} />
+        <Route path="/Schedule6" exact component={Schedule6s} />
+        <Route path="/Schedule7" exact component={Schedule7s} />
+        <Route path="/Schedule89" exact component={Schedule89s} />
 
 
       </Switch>

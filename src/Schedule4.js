@@ -7,58 +7,67 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container';
 import Fade from 'react-reveal/Fade';
 
+function Schedule4s() {
 
-function Thursdays() {
-
-    const [thursdays, setThursdays] = useState(null);
+    const [schedule4s, setSchedule4s] = useState(null);
 
     useEffect(() => {
-        const fetchThursdays = async() => {
-            const { thursdays } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
+        const fetchSchedule4s = async() => {
+            const { schedule4s } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             `{
-                thursdays(orderBy: orderOfSchedule_ASC) {
+                schedule4s(orderBy: orderOfSchedule_ASC) {
                     time
-                    class
+                    classA
+                    classB
                   }
               }
             `
             );
 
-    setThursdays(thursdays);
+    setSchedule4s(schedule4s);
   };
 
-  fetchThursdays();
+  fetchSchedule4s();
 
 },[]);
 
         return (
             <div id="container">
-                <h1 className="center bold" id="gradienttext">Thursday's schedule</h1>
+                <h1 className="center bold" id="gradienttext">4th Grade Schedule</h1>
                 <div className='blank'></div>
                 <div id="divmesomespacesmall" />
-                {!thursdays ? (
+                {!schedule4s ? (
                     'Loading'
                 ) : (
                         <Container fluid>
-                        <Row xs={2} sm={2} md={2} lg={2} xl={2} className="g-1 align-items-center d-flex card-block">
+                        <Row xs={3} sm={3} md={3} lg={3} xl={3} className="g-1 align-items-center d-flex card-block">
                     
-                            {thursdays.map((thursday, i) => (
+                            {schedule4s.map((schedule4, i) => (
                                 
                                 <Fade bottom cascade>
-                                <Col key={thursday.time}>
-                                <Card id = 'calendarcardleft'>
+                                <Col key={schedule4.time}>
+                                <Card id = 'calendarcard'>
                                   
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
-                                        <a>{thursday.time}</a>
+                                        <a>{schedule4.time}</a>
                                     </Card.Title>
                                     
                                 </Card>
 
                                 </Col>
                                 <Col>
-                                <Card id = 'calendarcardright'>
+                                <Card id = 'calendarcard'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
-                                  <a>{thursday.class}</a>
+                                  <a>{schedule4.classA}</a>
+                                  </Card.Title>
+                                  </Card>
+                                
+                                </Col>
+
+                                <Col>
+                                <Card id = 'calendarcard'>
+                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                  <a>{schedule4.classB}</a>
                                   </Card.Title>
                                   </Card>
                                 
@@ -74,4 +83,4 @@ function Thursdays() {
         );
     };
 
-export default Thursdays;
+export default Schedule4s;

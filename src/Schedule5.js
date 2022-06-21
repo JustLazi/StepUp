@@ -8,48 +8,49 @@ import Container from 'react-bootstrap/Container';
 import Fade from 'react-reveal/Fade';
 
 
-function Tuesdays() {
+function Schedule5s() {
 
-    const [tuesdays, setTuesdays] = useState(null);
+    const [schedule5s, setSchedule5s] = useState(null);
 
     useEffect(() => {
-        const fetchTuesdays = async() => {
-            const { tuesdays } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
+        const fetchSchedule5s = async() => {
+            const { schedule5s } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             `{
-                tuesdays(orderBy: orderOfSchedule_ASC) {
+                schedule5s(orderBy: orderOfSchedule_ASC) {
                     time
-                    class
+                    classA
+                    classB
                   }
               }
             `
             );
 
-    setTuesdays(tuesdays);
+    setSchedule5s(schedule5s);
   };
 
-  fetchTuesdays();
+  fetchSchedule5s();
 
 },[]);
 
         return (
             <div id="container">
-                <h1 className="center bold" id="gradienttext">Tuesday's schedule</h1>
+                <h1 className="center bold" id="gradienttext">5th Grade Schedule</h1>
                 <div className='blank'></div>
                 <div id="divmesomespacesmall" />
-                {!tuesdays ? (
+                {!schedule5s ? (
                     'Loading'
                 ) : (
                         <Container fluid>
-                        <Row xs={2} sm={2} md={2} lg={2} xl={2} className="g-1 align-items-center d-flex card-block">
+                        <Row xs={3} sm={3} md={3} lg={3} xl={3} className="g-1 align-items-center d-flex card-block">
                     
-                            {tuesdays.map((tuesday, i) => (
+                            {schedule5s.map((schedule5, i) => (
                                 
                                 <Fade bottom cascade>
-                                <Col key={tuesday.time}>
+                                <Col key={schedule5.time}>
                                 <Card id = 'calendarcardleft'>
                                   
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
-                                        <a>{tuesday.time}</a>
+                                    <Card.Title id = 'calendarcardtexttime' class = "card-body align-items-center d-flex justify-content-center">
+                                        <a>{schedule5.time}</a>
                                     </Card.Title>
                                     
                                 </Card>
@@ -58,7 +59,16 @@ function Tuesdays() {
                                 <Col>
                                 <Card id = 'calendarcardright'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
-                                  <a>{tuesday.class}</a>
+                                  <a>{schedule5.classA}</a>
+                                  </Card.Title>
+                                  </Card>
+                                
+                                </Col>
+
+                                <Col>
+                                <Card id = 'calendarcardright'>
+                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                  <a>{schedule5.classB}</a>
                                   </Card.Title>
                                   </Card>
                                 
@@ -74,4 +84,4 @@ function Tuesdays() {
         );
     };
 
-export default Tuesdays;
+export default Schedule5s;

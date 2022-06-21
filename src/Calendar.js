@@ -11,7 +11,7 @@ const Calendar = () => {
         
         <div id="container">
         <Zoom top>
-        <h1 className="center bold" id="gradienttext">Weekly Calendar</h1>
+        <h1 className="center bold" id="gradienttext">General Schedule</h1>
         </Zoom>
         <div id="divmesomespacesmall" />
         <Container fluid>
@@ -19,14 +19,14 @@ const Calendar = () => {
         <Fade>
         <Row xs={1} sm={1} md={2} lg={3} xl={5} >
 
-        <Col key="Monday" id="padblog">
+        <Col key="Schedule4" id="padblog">
         <div id="centereddiv2">
         <Tilt>
-        <Link className="App-link" to={`/Monday`}>
+        <Link className="App-link" to={`/Schedule4`}>
         <Card style={{"height" : '32rem', width: '18vw' }} id="calendartilt">
         <Card.Body> 
         <Card.Title className = "centeredcard">
-            <p id="calendarfont">Monday</p>
+            <p id="calendarfont">4th Grade</p>
         </Card.Title>
         </Card.Body>
         </Card>
@@ -35,14 +35,14 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Tuesday" id="padblog">
+        <Col key="Schedule5" id="padblog">
         <div id="centereddiv2">
         <Tilt>
-        <Link className="App-link" to={`/Tuesday`}>
+        <Link className="App-link" to={`/Schedule5`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
-            <p id="calendarfont">Tuesday</p>
+            <p id="calendarfont">5th Grade</p>
         </Card.Title>
         </Card.Body>
         </Card>
@@ -51,14 +51,14 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Wednesday" id="padblog">
+        <Col key="Schedule6" id="padblog">
         <div id="centereddiv2">
         <Tilt>
-        <Link className="App-link" to={`/Wednesday`}>
+        <Link className="App-link" to={`/Schedule6`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
-            <p id="calendarfont">Wednesday</p>
+            <p id="calendarfont">6th Grade</p>
         </Card.Title>
         </Card.Body>
         </Card>
@@ -67,14 +67,14 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Thursday" id="padblog">
+        <Col key="Schedule7" id="padblog">
         <div id="centereddiv2">
         <Tilt>
-        <Link className="App-link" to={`/Thursday`}>
+        <Link className="App-link" to={`/Schedule7`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
-            <p id="calendarfont">Thursday</p>
+            <p id="calendarfont">7th Grade</p>
         </Card.Title>
         </Card.Body>
         </Card>
@@ -83,14 +83,14 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Friday" id="padblog">
+        <Col key="Schedule89" id="padblog">
         <div id="centereddiv2">
         <Tilt>
-        <Link className="App-link" to={`/Friday`}>
+        <Link className="App-link" to={`/Schedule89`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
-            <p id="calendarfont">Friday</p>
+            <p id="calendarfont">8th & 9th Grade</p>
         </Card.Title>
         </Card.Body>
         </Card>

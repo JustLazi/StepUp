@@ -613,11 +613,11 @@ body.dark {
   background-color: var(--background-color);
   color: var(--text-color);
   border-color: var(--text-color);
-  border-width: 2px;
+  border-width: 0.15vw;
   position: relative;
 }
 
 #calendarcardtext {
-  font-size: 2em;
-  font-weight: bolder;
+  font-size: 3vw;
+  font-weight: bold;
 }
