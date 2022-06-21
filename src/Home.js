@@ -44,7 +44,7 @@ const Home = () => {
 
 <div id="announcementdiv">
     <p className="center" class="buttondescrip">Check out the latest Announcements</p>
-    <img src='announcement.jpg' id='announcementimg'></img>
+    <img src='announcement.svg' id='announcementimg'></img>
     <Button id="bigbutton" href="/Announcements">Announcements</Button>
     
 </div>
@@ -53,7 +53,7 @@ const Home = () => {
 
 <div id="centereddiv">
     <p className="center" class="buttondescrip">Our Calendar</p>
-    <img src='calendar.jpg' id='calendarimg'></img>
+    <img src='calendar.svg' id='calendarimg'></img>
     <Button id="bigbutton" href="/Calendar">Calendar</Button>
 </div>
 
