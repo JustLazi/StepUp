@@ -20,6 +20,8 @@ function Schedule5s() {
                     time
                     classA
                     classB
+                    descriptionA
+                    descriptionB
                   }
               }
             `
@@ -58,18 +60,24 @@ function Schedule5s() {
                                 </Col>
                                 <Col>
                                 <Card id = 'calendarcard'>
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtextclass' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule5.classA}</a>
                                   </Card.Title>
+                                  <Card.Subtitle id='carddescription'>
+                                  <a>{schedule5.descriptionA}</a>
+                                  </Card.Subtitle>
                                   </Card>
                                 
                                 </Col>
 
                                 <Col>
                                 <Card id = 'calendarcard'>
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtextclass' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule5.classB}</a>
                                   </Card.Title>
+                                  <Card.Subtitle id='carddescription'>
+                                  <a>{schedule5.descriptionB}</a>
+                                  </Card.Subtitle>
                                   </Card>
                                 
                                 </Col>

@@ -20,6 +20,8 @@ function Schedule89s() {
                     time
                     classA
                     classB
+                    descriptionA
+                    descriptionB
                   }
               }
             `
@@ -58,9 +60,12 @@ function Schedule89s() {
                                 </Col>
                                 <Col>
                                 <Card id = 'calendarcard'>
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtextclass' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule89.classA}</a>
                                   </Card.Title>
+                                  <Card.Subtitle id='carddescription'>
+                                  <a>{schedule89.descriptionA}</a>
+                                  </Card.Subtitle>
                                   </Card>
                                 
                                 
@@ -68,9 +73,12 @@ function Schedule89s() {
                                 </Col>
                                 <Col>
                                 <Card id = 'calendarcard'>
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtextclass' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule89.classB}</a>
                                   </Card.Title>
+                                  <Card.Subtitle id='carddescription'>
+                                  <a>{schedule89.descriptionB}</a>
+                                  </Card.Subtitle>
                                   </Card>
                                 
                                 </Col>
