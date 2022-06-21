@@ -4,24 +4,27 @@ import { Row, Col, Container, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Tilt from 'react-parallax-tilt';
 import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 const Calendar = () => {
     return (
+        
         <div id="container">
         <Zoom top>
         <h1 className="center bold" id="gradienttext">Weekly Calendar</h1>
         </Zoom>
         <div id="divmesomespacesmall" />
         <Container fluid>
-  
-        <Row xs={1} sm={1} md={2} lg={3} xl={5} className="g-5 align-items-center">
+        
+        <Fade>
+        <Row xs={1} sm={1} md={2} lg={3} xl={5} >
 
         <Col key="Monday" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
+        <Tilt>
         <Link className="App-link" to={`/Monday`}>
-        <Card style={{"height" : '65vh', width: '18rem' }} id="calendartilt">
-        <Card.Body>
+        <Card style={{"height" : '32rem', width: '18vw' }} id="calendartilt">
+        <Card.Body> 
         <Card.Title className = "centeredcard">
             <p id="calendarfont">Monday</p>
         </Card.Title>
@@ -34,9 +37,9 @@ const Calendar = () => {
 
         <Col key="Tuesday" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
+        <Tilt>
         <Link className="App-link" to={`/Tuesday`}>
-        <Card style={{"height" : '65vh', width: '18rem' }} id="calendartilt">
+        <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
             <p id="calendarfont">Tuesday</p>
@@ -50,9 +53,9 @@ const Calendar = () => {
 
         <Col key="Wednesday" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
+        <Tilt>
         <Link className="App-link" to={`/Wednesday`}>
-        <Card style={{"height" : '65vh', width: '18rem' }} id="calendartilt">
+        <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
             <p id="calendarfont">Wednesday</p>
@@ -66,9 +69,9 @@ const Calendar = () => {
 
         <Col key="Thursday" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
+        <Tilt>
         <Link className="App-link" to={`/Thursday`}>
-        <Card style={{"height" : '65vh', width: '18rem' }} id="calendartilt">
+        <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
             <p id="calendarfont">Thursday</p>
@@ -82,9 +85,9 @@ const Calendar = () => {
 
         <Col key="Friday" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
+        <Tilt>
         <Link className="App-link" to={`/Friday`}>
-        <Card style={{"height" : '65vh', width: '18rem' }} id="calendartilt">
+        <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body>
         <Card.Title className = "centeredcard">
             <p id="calendarfont">Friday</p>
@@ -98,6 +101,7 @@ const Calendar = () => {
 
         
     </Row>
+    </Fade>
     <div id="divmesomespacesmall"></div>
     </Container>
         </div>

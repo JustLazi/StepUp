@@ -6,6 +6,8 @@ import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import { Card, Row, Col, Container } from 'react-bootstrap';
 import Zoom from 'react-reveal/Zoom';
+import Roll from 'react-reveal/Roll';
+import Fade from 'react-reveal/Fade';
 
 const Transport = () => {
     const [data, setData] = useState({posts: []});
@@ -26,13 +28,17 @@ const Transport = () => {
  <Zoom top>
   <h1 className="center bold" id="gradienttext">Transport</h1>
   </Zoom>
+  <div id='centereddiv'>
+  <Fade>
   <h3 class="center">Here are the <span className="bold" id="gradienttext3">transport routes</span> </h3>
+  </Fade>
+  </div>
   <div id="divmesomespacesmall" />
 
   <Container fluid>
   
   <Row xs={1} sm={1} md={2} lg={3} xl={4} className="g-5 align-items-center">
-
+        <Roll>
         <Col key="route1" id="padblog">
         <div id="centereddiv2">
         <Tilt style={{ height: 250, width: 250 }}>
@@ -52,7 +58,9 @@ const Transport = () => {
         </Tilt>
         </div>
         </Col>
+        </Roll>
 
+        <Roll>
         <Col key="route2" id="padblog">
         <div id="centereddiv2">
         <Tilt style={{ height: 250, width: 250 }}>
@@ -72,7 +80,9 @@ const Transport = () => {
         </Tilt>
         </div>
         </Col>
+        </Roll>
 
+        <Roll>
         <Col key="route3" id="padblog">
         <div id="centereddiv2">
         <Tilt style={{ height: 250, width: 250 }}>
@@ -92,6 +102,7 @@ const Transport = () => {
         </Tilt>
         </div>
         </Col>
+        </Roll>
     </Row>
     <div id="divmesomespacesmall"></div>
     </Container>
