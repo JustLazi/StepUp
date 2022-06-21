@@ -61,7 +61,7 @@ const Home = () => {
 
 <div id="pointsdiv">
     <p className="center" class="buttondescrip">Want to know how many points you have?</p>
-    <img src='points.jpg' id='pointimg'></img>
+    <img src='points.svg' id='pointimg'></img>
     <Button id="bigbutton" href="/Points">Points</Button>
 </div>
 </Fade>

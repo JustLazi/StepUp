@@ -52,7 +52,7 @@ body.dark {
 }
 
 #container {
-  background: var(--background-color);
+  background-image: url('/public/contentbg.svg');
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
   padding-top: 12vh;
