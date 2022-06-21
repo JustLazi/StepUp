@@ -109,8 +109,7 @@ body.dark {
   color: var(--text-color);
   font-size: 0.7rem;
 /* bottom aligns the text with 3px padding */
-  position: absolute;
-  bottom: 3px;
+  
 }
 
 #textchunk {

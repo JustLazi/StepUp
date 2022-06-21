@@ -23,9 +23,6 @@ import Point5 from './Point5';
 import Point6 from './Point6';
 import Point7 from './Point7';
 import Point8 from './Point8';
-import transportroute1 from './transportroute1';
-import transportroute2 from './transportroute2';
-import transportroute3 from './transportroute3';
 import Mondays from './Monday';
 import Tuesdays from './Tuesday';
 import Wednesdays from './Wednesday';
@@ -77,9 +74,6 @@ export default class Navb extends Component {
         <Route path="/Point6" exact component={Point6} />
         <Route path="/Point7" exact component={Point7} />
         <Route path="/Point8" exact component={Point8} />
-        <Route path="/transportroute1" exact component={transportroute1} />
-        <Route path="/transportroute2" exact component={transportroute2} />
-        <Route path="/transportroute3" exact component={transportroute3} />
         <Route path="/Monday" exact component={Mondays} />
         <Route path="/Tuesday" exact component={Tuesdays} />
         <Route path="/Wednesday" exact component={Wednesdays} />

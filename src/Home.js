@@ -8,6 +8,7 @@ import { Card, Row, Col, Container, Image } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import Tada from 'react-reveal/Tada';
 
 const Home = () => {
 
@@ -68,68 +69,52 @@ const Home = () => {
 </Fade>
 <div id="divmesomespacesmall" />
 <Container fluid>
-<Row xs={1} sm={1} md={2} lg={3} xl={4} className="g-5 align-items-center">
-<Col key="route1" id="padblog">
+  
+  <Row xs={1} sm={1} md={2} lg={3} xl={3} className="g-5 align-items-center">
+        <Tada>
+        <Col key="route1" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
-        <Link className="App-link" to={`/transportroute1`}>
-        <Card style={{"height" : '120%', width: '18rem' }} id="shadowy">
-        <Card.Img variant="top" src="route1.jpg" />
-        <Card.Body>
-        <Card.Title>
-            <p id="blogtitlefont">Route 1</p>
-        </Card.Title>
-        <Card.Text>
-        <a id="cardtextfont">Posted: <Moment format="MMM DD, YYYY">12/21/2005</Moment></a>
-        </Card.Text>
-        </Card.Body>
+        <Tilt >
+       
+        <Card  id="shadowy">
+        <Card.Img variant="top" src="image1.jpg" />
         </Card>
-        </Link>
-        </Tilt>
-        </div>
-        </Col>
 
-        <Col key="route2" id="padblog">
-        <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
-        <Link className="App-link" to={`/transportroute2`}>
-        <Card style={{"height" : '120%', width: '18rem' }} id="shadowy">
-        <Card.Img variant="top" src="route2.jpg" />
-        <Card.Body>
-        <Card.Title>
-            <p id="blogtitlefont">Route 2</p>
-        </Card.Title>
-        <Card.Text>
-        <a id="cardtextfont">Posted: <Moment format="MMM DD, YYYY">12/21/2005</Moment></a>
-        </Card.Text>
-        </Card.Body>
-        </Card>
-        </Link>
         </Tilt>
         </div>
         </Col>
+        </Tada>
 
-        <Col key="route3" id="padblog">
+        <Tada>
+        <Col key="route1" id="padblog">
         <div id="centereddiv2">
-        <Tilt style={{ height: 250, width: 250 }}>
-        <Link className="App-link" to={`/transportroute1`}>
-        <Card style={{"height" : '120%', width: '18rem' }} id="shadowy">
-        <Card.Img variant="top" src="route3.jpg" />
-        <Card.Body>
-        <Card.Title>
-            <p id="blogtitlefont">Route 3</p>
-        </Card.Title>
-        <Card.Text>
-        <a id="cardtextfont">Posted: <Moment format="MMM DD, YYYY">12/21/2005</Moment></a>
-        </Card.Text>
-        </Card.Body>
+        <Tilt >
+       
+        <Card  id="shadowy">
+        <Card.Img variant="top" src="image2.jpg" />
         </Card>
-        </Link>
+
         </Tilt>
         </div>
         </Col>
-</Row>
-</Container>
+        </Tada>
+
+        <Tada>
+        <Col key="route1" id="padblog">
+        <div id="centereddiv2">
+        <Tilt >
+       
+        <Card  id="shadowy">
+        <Card.Img variant="top" src="image3.jpg" />
+        </Card>
+
+        </Tilt>
+        </div>
+        </Col>
+        </Tada>
+    </Row>
+    <div id="divmesomespacesmall"></div>
+    </Container>
 </section>
 </div>
     )

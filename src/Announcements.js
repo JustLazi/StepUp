@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import Moment from 'react-moment';
 import Nav from 'react-bootstrap/Nav';
 
@@ -35,46 +36,61 @@ const Announcements = () => {
 
         return (
             <div id="container">
+                <Zoom top>
                 <h1 className="center bold" id="gradienttext">Announcements</h1>
+                </Zoom>
                 <div className='blank'></div>
                 <Nav variant="pills" className="justify-content-center" activeKey="1">
+                <Row xs={1} sm={1} md={2} lg={3} xl={3} className="g-1 align-items-center d-flex card-block">
+                <Col>
                 <Nav.Item>
-                    <Nav.Link eventKey="General" href="/Announcements" id='activelink'>
+                    <Nav.Link eventKey="General" href="/Announcements" id='activelink' className='center'>
                             General Announcement
                      </Nav.Link>
                 </Nav.Item>
+                </Col>
+                <Col>
                 <Nav.Item>
-                    <Nav.Link eventKey="4thgrade" title="4thgrade" href="/Announcement4">
+                    <Nav.Link eventKey="4thgrade" title="4thgrade" href="/Announcement4" className='center'>
                       4th grade announcements
                     </Nav.Link>
                 </Nav.Item>
+                </Col>
+                <Col>
                 <Nav.Item>
-                    <Nav.Link eventKey="5thgrade" title="5thgrade" href="/Announcement5">
+                    <Nav.Link eventKey="5thgrade" title="5thgrade" href="/Announcement5" className='center'>
                       5th grade announcements
                     </Nav.Link>
                 </Nav.Item>
+                </Col>
+                <Col>
                 <Nav.Item>
-                    <Nav.Link eventKey="6thgrade" title="6thgrade" href="/Announcement6">
+                    <Nav.Link eventKey="6thgrade" title="6thgrade" href="/Announcement6" className='center'>
                       6th grade announcements
                     </Nav.Link>
                 </Nav.Item>
+                </Col>
+                <Col>
                 <Nav.Item>
-                    <Nav.Link eventKey="7thgrade" title="7thgrade" href="/Announcement7">
+                    <Nav.Link eventKey="7thgrade" title="7thgrade" href="/Announcement7" className='center'>
                       7th grade announcements
                     </Nav.Link>
                 </Nav.Item>
+                </Col>
+                <Col>
                 <Nav.Item>
-                    <Nav.Link eventKey="8thgrade" title="8thgrade" href="/Announcement8">
+                    <Nav.Link eventKey="8thgrade" title="8thgrade" href="/Announcement8" className='center'>
                       8th and 9th grade announcements
                     </Nav.Link>
                 </Nav.Item>
-      
+                </Col>
+                </Row>
                 </Nav>
                 
                 <div id="divmesomespace"></div>
                 <div id="divmesomespacesmall" />
                 {!announcements ? (
-                    'Loading'
+                    <p id='center'>Loading</p>
                 ) : (
                         <Container fluid>
                         
