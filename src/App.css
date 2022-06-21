@@ -614,10 +614,23 @@ body.dark {
   color: var(--text-color);
   border-color: var(--text-color);
   border-width: 0.15vw;
+  margin-bottom: 0%;
   position: relative;
 }
 
 #calendarcardtext {
-  font-size: 3vw;
+  font-size: 3.2vw;
   font-weight: bold;
+  align-self: center;
+}
+
+#calendarcardtextclass {
+  font-size: 2.1vw;
+  font-weight: bold;
+  align-self: center;
+}
+
+#carddescription {
+  font-size: 1.6vw;
+  text-align: center;
 }

@@ -47,7 +47,7 @@ function Schedule89s() {
                                 
                                 <Fade bottom cascade>
                                 <Col key={schedule89.time}>
-                                <Card id = 'calendarcardleft'>
+                                <Card id = 'calendarcard'>
                                   
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                         <a>{schedule89.time}</a>
@@ -57,15 +57,17 @@ function Schedule89s() {
 
                                 </Col>
                                 <Col>
-                                <Card id = 'calendarcardright'>
+                                <Card id = 'calendarcard'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule89.classA}</a>
                                   </Card.Title>
                                   </Card>
                                 
+                                
+                                
                                 </Col>
                                 <Col>
-                                <Card id = 'calendarcardright'>
+                                <Card id = 'calendarcard'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule89.classB}</a>
                                   </Card.Title>

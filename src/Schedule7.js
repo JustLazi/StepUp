@@ -47,7 +47,7 @@ function Schedule7s() {
                                 
                                 <Fade bottom cascade>
                                 <Col key={schedule7.time}>
-                                <Card id = 'calendarcardleft'>
+                                <Card id = 'calendarcard'>
                                   
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                         <a>{schedule7.time}</a>
@@ -57,7 +57,7 @@ function Schedule7s() {
 
                                 </Col>
                                 <Col>
-                                <Card id = 'calendarcardright'>
+                                <Card id = 'calendarcard'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule7.classA}</a>
                                   </Card.Title>
@@ -66,7 +66,7 @@ function Schedule7s() {
                                 </Col>
 
                                 <Col>
-                                <Card id = 'calendarcardright'>
+                                <Card id = 'calendarcard'>
                                     <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule7.classB}</a>
                                   </Card.Title>

@@ -19,6 +19,8 @@ function Schedule4s() {
                     time
                     classA
                     classB
+                    descriptionA
+                    descriptionB
                   }
               }
             `
@@ -57,18 +59,24 @@ function Schedule4s() {
                                 </Col>
                                 <Col>
                                 <Card id = 'calendarcard'>
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtextclass' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule4.classA}</a>
                                   </Card.Title>
+                                  <Card.Subtitle id='carddescription'>
+                                  <a>{schedule4.descriptionA}</a>
+                                  </Card.Subtitle>
                                   </Card>
                                 
                                 </Col>
 
                                 <Col>
                                 <Card id = 'calendarcard'>
-                                    <Card.Title id = 'calendarcardtext' class = "card-body align-items-center d-flex justify-content-center">
+                                    <Card.Title id = 'calendarcardtextclass' class = "card-body align-items-center d-flex justify-content-center">
                                   <a>{schedule4.classB}</a>
                                   </Card.Title>
+                                  <Card.Subtitle id='carddescription'>
+                                  <a>{schedule4.descriptionB}</a>
+                                  </Card.Subtitle>
                                   </Card>
                                 
                                 </Col>
