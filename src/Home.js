@@ -79,6 +79,7 @@ const Home = () => {
 <div id='blanklong'></div>
 
 </div>
+<Fade>
 <div className= 'center' id='lastpart'>
     <div id='divmesomespace'></div>
     <p>Location</p>
@@ -89,6 +90,7 @@ const Home = () => {
     <p>8:00 AM to 2:30 PM</p>
     <Button id="button" href="/Getintouch">Contact US</Button>
 </div>
+</Fade>
 </div>
 
     )
