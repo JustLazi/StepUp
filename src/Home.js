@@ -28,6 +28,7 @@ const Home = () => {
 
     
     return(
+<div>
 <div id="container">
 
 <section id="homepushdown">
@@ -75,60 +76,21 @@ const Home = () => {
 </Fade>
 </section>
 
-<section id="homesection">
-<Fade bottom>
-<h1 className="center bold">Transportation Routes</h1>
-</Fade>
-<div id="divmesomespacesmall" />
-<Container fluid>
-  
-  <Row xs={1} sm={1} md={2} lg={3} xl={3} className="g-5 align-items-center">
-        <Tada>
-        <Col key="route1" id="padblog">
-        <div id="centereddiv2">
-        <Tilt >
-       
-        <Card  id="shadowy">
-        <Card.Img variant="top" src="image1.jpg" />
-        </Card>
+<div id='blanklong'></div>
 
-        </Tilt>
-        </div>
-        </Col>
-        </Tada>
-
-        <Tada>
-        <Col key="route1" id="padblog">
-        <div id="centereddiv2">
-        <Tilt >
-       
-        <Card  id="shadowy">
-        <Card.Img variant="top" src="image2.jpg" />
-        </Card>
-
-        </Tilt>
-        </div>
-        </Col>
-        </Tada>
-
-        <Tada>
-        <Col key="route1" id="padblog">
-        <div id="centereddiv2">
-        <Tilt >
-       
-        <Card  id="shadowy">
-        <Card.Img variant="top" src="image3.jpg" />
-        </Card>
-
-        </Tilt>
-        </div>
-        </Col>
-        </Tada>
-    </Row>
-    <div id="divmesomespacesmall"></div>
-    </Container>
-</section>
 </div>
+<div className= 'center' id='lastpart'>
+    <div id='divmesomespace'></div>
+    <p>Location</p>
+    <p>South Middle School</p>
+    <p>105 Keith Ave, Brockton, MA 02301</p>
+    <div id='divmesomespacesmall'></div>
+    <p>Time</p>
+    <p>8:00 AM to 2:30 PM</p>
+    <Button id="button" href="/Getintouch">Contact US</Button>
+</div>
+</div>
+
     )
 }
 

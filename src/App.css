@@ -666,3 +666,15 @@ body.dark {
   font-size: 1.6vw;
   text-align: center;
 }
+
+#blanklong{
+  padding-bottom: 10vh;
+}
+
+#lastpart {
+  background-color: green;
+  width: auto;
+  padding-bottom: 3vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
