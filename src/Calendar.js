@@ -17,13 +17,13 @@ const Calendar = () => {
         <Container fluid>
         
         <Fade>
-        <Row xs={1} sm={1} md={2} lg={3} xl={5} >
+        <Row xs={5} sm={5} md={5} lg={5} xl={5} >
 
-        <Col key="Schedule4" id="padblog">
-        <div id="centereddiv2">
+        <Col key="Schedule4">
+        <div className='center'>
         <Tilt>
         <Link className="App-link" to={`/Schedule4`}>
-        <Card style={{"height" : '32rem', width: '18vw' }} id="calendartilt">
+        <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
         <Card.Body> 
         <Card.Title className = "centeredcard">
             <p id="calendarfont">4th Grade</p>
@@ -35,8 +35,8 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Schedule5" id="padblog">
-        <div id="centereddiv2">
+        <Col key="Schedule5">
+        <div>
         <Tilt>
         <Link className="App-link" to={`/Schedule5`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
@@ -51,8 +51,8 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Schedule6" id="padblog">
-        <div id="centereddiv2">
+        <Col key="Schedule6">
+        <div>
         <Tilt>
         <Link className="App-link" to={`/Schedule6`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
@@ -67,8 +67,8 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Schedule7" id="padblog">
-        <div id="centereddiv2">
+        <Col key="Schedule7">
+        <div>
         <Tilt>
         <Link className="App-link" to={`/Schedule7`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
@@ -83,8 +83,8 @@ const Calendar = () => {
         </div>
         </Col>
 
-        <Col key="Schedule89" id="padblog">
-        <div id="centereddiv2">
+        <Col key="Schedule89">
+        <div>
         <Tilt>
         <Link className="App-link" to={`/Schedule89`}>
         <Card style={{"height" : '65vh', width: '18vw' }} id="calendartilt">
