@@ -365,7 +365,55 @@ body.dark {
 }
 
 
+#padblog {
+  padding-bottom: 10vh;
+ }
 
+ @media screen and (max-width: 767px) {
+   #padblog {
+     padding-bottom: 80vh;
+   }
+  }
+@media screen and (max-width: 662px) {
+   #padblog {
+     padding-bottom: 70vh;
+   }
+ }
+ @media screen and (max-width: 600px) {
+  #padblog {
+    padding-bottom: 60vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  #padblog {
+    padding-bottom: 55vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  #padblog {
+    padding-bottom: 50vh;
+  }
+}
+@media screen and (max-width: 460px) {
+  #padblog {
+    padding-bottom: 45vh;
+  }
+}
+ @media screen and (max-width: 430px) {
+   #padblog {
+     padding-bottom: 40vh;
+   }
+ }
+ @media screen and (max-width: 380px) {
+   #padblog {
+     padding-bottom: 40vh;
+   }
+ }
+ @media screen and (max-width: 350px) {
+   #padblog {
+     padding-bottom: 30vh;
+   }
+ }
 
 #studentsitemtext {
   line-height: 2;
