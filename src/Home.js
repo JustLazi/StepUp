@@ -64,6 +64,14 @@ const Home = () => {
     <img src='points.svg' id='pointimg'></img>
     <Button id="bigbutton" href="/Points">Points</Button>
 </div>
+
+<div className="blank"></div>
+
+<div id="pointsdiv">
+    <p className="center" class="buttondescrip">How do I get to the program?</p>
+    <img src='transport.svg' id='transportimg'></img>
+    <Button id="bigbutton" href="/Transport">Transport</Button>
+</div>
 </Fade>
 </section>
 

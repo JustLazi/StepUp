@@ -237,6 +237,7 @@ body.dark {
 #pointimg{
   padding-top:1vw;
   width:30%;
+  padding-bottom:1vw;
 }
 
 #calendarimg {
@@ -246,6 +247,11 @@ body.dark {
 
 }
 
+#transportimg {
+  padding-top:1vw;
+  width:30%;
+  padding-bottom:1vw;
+}
 #blogtitlefont {
   font-weight: 700;
   text-decoration: underline;
