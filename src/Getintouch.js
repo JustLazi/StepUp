@@ -6,7 +6,7 @@ export default class Getintouch extends Component {
     render() {
         return (
         <div id="container">
-        <h3 className="center bold" id="gradienttext">Contact me</h3>
+        <h3 className="center bold" id="gradienttext">Contact Us</h3>
         <div id="formposition">
         <form action="https://getform.io/f/335805e2-e613-48ff-b327-4564bc543f0e" method="POST" acceptCharset="UTF-8">
             

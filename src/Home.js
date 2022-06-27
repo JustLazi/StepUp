@@ -88,7 +88,7 @@ const Home = () => {
     <div id='divmesomespacesmall'></div>
     <p>Time</p>
     <p>8:00 AM to 2:30 PM</p>
-    <Button id="button" href="/Getintouch">Contact US</Button>
+    <Button id="button" href="/Getintouch">Contact Us</Button>
 </div>
 </Fade>
 </div>
