@@ -42,6 +42,11 @@ const Home = () => {
 <p className="center" id="homep">Welcome to Step Up website</p>
 
 <div className="blank"></div>
+<div id='centereddiv'>
+<p className="center" class="buttondescrip">Learn more about us</p>
+    <Button id="bigbutton" href="https://edrworld.org/2022summer/" target= "_blank" rel="noopener noreferrer">About us</Button>
+    </div>
+<div className='blank'></div>
 
 <div id="announcementdiv">
     <p className="center" class="buttondescrip">Check out the latest Announcements</p>
@@ -71,7 +76,7 @@ const Home = () => {
 <div id="pointsdiv">
     <p className="center" class="buttondescrip">How do I get to the program?</p>
     <img src='transport.svg' id='transportimg'></img>
-    <Button id="bigbutton" href="/Transport">Transport</Button>
+    <Button id="bigbutton" href="/Transport">School Buses</Button>
 </div>
 </Fade>
 </section>

@@ -27,11 +27,11 @@ const Transport = () => {
     return(
 <div id="container">
  <Zoom top>
-  <h1 className="center bold" id="gradienttext">Transport</h1>
+  <h1 className="center bold" id="gradienttext">School Buses</h1>
   </Zoom>
   <div id='centereddiv'>
   <Fade>
-  <h3 class="center">Here are the <span className="bold" id="gradienttext3">transport routes</span> </h3>
+  <h3 class="center">Here are the <span className="bold" id="gradienttext3">school buses</span> </h3>
   </Fade>
   </div>
   <div id="divmesomespacesmall" />
