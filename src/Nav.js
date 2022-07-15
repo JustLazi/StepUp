@@ -23,7 +23,6 @@ import Point5 from './Point5';
 import Point6 from './Point6';
 import Point7 from './Point7';
 import Point8 from './Point8';
-
 import Schedule4s from './Schedule4';
 import Schedule7s from './Schedule7';
 import Schedule5s from './Schedule5';
@@ -75,7 +74,6 @@ export default class Navb extends Component {
         <Route path="/Point6" exact component={Point6} />
         <Route path="/Point7" exact component={Point7} />
         <Route path="/Point8" exact component={Point8} />
-
         <Route path="/Schedule4" exact component={Schedule4s} />
         <Route path="/Schedule5" exact component={Schedule5s} />
         <Route path="/Schedule6" exact component={Schedule6s} />

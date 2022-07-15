@@ -14,7 +14,7 @@ function Schedule5s() {
 
     useEffect(() => {
         const fetchSchedule5s = async() => {
-            const { schedule5s } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
+            const { schedule5s } = await request('https://api-us-east-1.hygraph.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             `{
                 schedule5s(orderBy: orderOfSchedule_ASC) {
                     time

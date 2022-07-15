@@ -15,7 +15,7 @@ const Announcement7 = () => {
 
     useEffect(() => {
         const fetchAnnouncements = async() => {
-            const { announcements } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
+            const { announcements } = await request('https://api-us-east-1.hygraph.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             `{
                 announcements(orderBy: date_DESC where: {grade_in: [7,10]}) {
                   writer

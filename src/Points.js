@@ -16,7 +16,7 @@ function Points() {
 
     useEffect(() => {
         const fetchPoints = async() => {
-            const { points } = await request('https://api-us-east-1.graphcms.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
+            const { points } = await request('https://api-us-east-1.hygraph.com/v2/cl4bneb8634nl01w83u2w32z3/master', 
             
             `{
                 points (orderBy: spoint_DESC){
