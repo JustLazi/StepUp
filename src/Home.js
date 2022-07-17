@@ -94,6 +94,7 @@ const Home = () => {
     <p>Time</p>
     <p>8:00 AM to 2:30 PM</p>
     <Button id="button" href="/Getintouch">Contact Us</Button>
+    <p>(617) 584 1327</p>
 </div>
 </Fade>
 </div>
